@@ -11,5 +11,7 @@ class SimpleFormController {
     @ResponseBody
     fun handleForm(
         @RequestParam name: String,
-    ): String = "Hello, $name!"
+    ): String {
+        return "Hello, $name!"
+    }
 }
